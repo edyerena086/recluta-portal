@@ -18,7 +18,10 @@ class CreateCandidatesTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('last_name')->nullable();
             $table->string('second_last_name')->nullable();
-            $table->unsignedInteger('gender_id')->default(\ReclutaTI\Gender::FEMALE);
+            $table->unsignedInteger('gender_id')->nullable();
+            $table->date('birthday')->nullable();
+            $table->string('profile_picture')->nullable();
+            $table->text('labor_goal')->nullable();
             $table->timestamps();
         });
     }

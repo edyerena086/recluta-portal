@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.front.candidate.dashboard');
 });
 
 Route::post('candidate/account', 'Front\Candidate\AccountController@store');

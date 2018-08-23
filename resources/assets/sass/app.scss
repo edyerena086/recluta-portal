@@ -1,14 +1,54 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Oswald:400,600,700');
 
 // Variables
 @import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.static-form {
+	h3 {
+		font-family: $font-family-second;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+	h5 {
+		font-family: $font-family-sans-serif;
+		font-size: .8rem;
+		margin-bottom: 2rem;
+	}
+
+	label {
+		font-size: .8rem;
+		text-transform: uppercase;
+		font-family: $font-family-second;
+		font-weight: 600;
+		color: #444;
+	}
+
+	.form-control {
+		font-size: .8rem;
+		font-family: $font-family-sans-serif;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+
+	.btn-send {
+		background-color: #333;
+		color: #fff;
+		font-family: $font-family-second;
+		text-transform: uppercase;
+		font-size: .8rem;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
 }

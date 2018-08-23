@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('candidate/account', 'Front\Candidate\AccountController@store');
+Route::get('candidate/account/facebook', 'Front\Candidate\AccountController@facebook');

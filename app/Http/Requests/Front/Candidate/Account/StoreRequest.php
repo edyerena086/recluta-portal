@@ -27,7 +27,7 @@ class StoreRequest extends FormRequest
             'nombre' => 'required',
             'apellidoPaterno' => 'required',
             'correoElectronico' => 'required|email|unique:users,email',
-            'password' => 'required|min:8|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\X])(?=.*[!$#%]).*$/|confirmed'
+            'password' => 'required|min:8|confirmed'
         ];
     }
 }

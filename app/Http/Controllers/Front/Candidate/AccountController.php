@@ -2,6 +2,7 @@
 
 namespace ReclutaTI\Http\Controllers\Front\Candidate;
 
+use Auth;
 use ReclutaTI\User;
 use ReclutaTI\Candidate;
 use Illuminate\Http\Request;
@@ -17,6 +18,20 @@ class AccountController extends Controller
 	{
 		return $this->middleware('guest');
 	}
+
+    /**
+     * [index description]
+     * @return [type] [description]
+     */
+    public function  index()
+    {
+        return view('front.candidate.account.index');
+    }
+
+    public function create()
+    {
+        return view('front.candidate.account.create');
+    }
 
 	/**
 	 * [store description]
@@ -36,6 +51,15 @@ class AccountController extends Controller
     		$candidate = new Candidate();
     		$candidate->user_id = $user->id;
     		$candidate->last_name = $request->apellidoPaterno;
+
+            //Autolog to new candidate
+            $credentials = [
+                'email' => $request->correoElectronico,
+                'password' => $request->password,
+                'role_id' => 1
+            ];
+
+            Auth::attempt($credentials);
 
     		if ($candidate->save()) {
     			$response = [

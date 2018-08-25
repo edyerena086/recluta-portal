@@ -154,6 +154,7 @@ return [
         /*
          * Application Service Providers...
          */
+        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         ReclutaTI\Providers\AppServiceProvider::class,
         ReclutaTI\Providers\AuthServiceProvider::class,
         // ReclutaTI\Providers\BroadcastServiceProvider::class,

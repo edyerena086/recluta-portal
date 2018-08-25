@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('layouts.front.candidate.dashboard');
 });
 
+
+//Candidate Login
+Route::get('candidate', 'Front\Candidate\AccountController@index');
+Route::get('candidate/account', 'Front\Candidate\AccountController@create');
 Route::post('candidate/account', 'Front\Candidate\AccountController@store');
 Route::get('candidate/account/facebook', 'Front\Candidate\AccountController@facebook');

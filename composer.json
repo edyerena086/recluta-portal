@@ -9,6 +9,7 @@
         "bugsnag/bugsnag-laravel": "^2.0",
         "caouecs/laravel-lang": "~3.0",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.6.*",
         "laravel/socialite": "^3.1",
         "laravel/tinker": "^1.0"

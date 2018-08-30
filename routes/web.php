@@ -16,8 +16,13 @@ Route::get('/', function () {
 });
 
 
-//Candidate Login
+//Candidate Account Routes
 Route::get('candidate', 'Front\Candidate\AccountController@index');
+Route::post('candidate', 'Front\Candidate\AccountController@login');
 Route::get('candidate/account', 'Front\Candidate\AccountController@create');
 Route::post('candidate/account', 'Front\Candidate\AccountController@store');
 Route::get('candidate/account/facebook', 'Front\Candidate\AccountController@facebook');
+Route::get('candidate/account/logout', 'Front\Candidate\AccountController@logout');
+
+//Candidate Curriculum
+Route::get('candidate/dashboard/curriculum', 'Front\Candidate\Dashboard\CurriculumController@index');

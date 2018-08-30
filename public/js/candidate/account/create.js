@@ -9,9 +9,12 @@ $('document').ready(function () {
 			url: $(this).attr('action'),
 			beforeSend: function () {
 				blockForm();
+
+				$('.btn-send').html('Cargando...');
 			},
 			error: function (jqXHR) {
 				unblockForm();
+				$('.btn-send').html('Enviar');
 
 				if (jqXHR.status == 422) {
 					displayMultipleFormErrors(jqXHR.responseJSON.errors);
@@ -19,6 +22,7 @@ $('document').ready(function () {
 			},
 			success: function (response) {
 				unblockForm();
+				$('.btn-send').html('Enviar');
 			}
 		});
 	});

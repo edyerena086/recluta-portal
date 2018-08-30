@@ -1,4 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Oswald:400,600,700);.static-form h3 {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Oswald:400,600,700);/**
+ * Header
+ */
+
+.top-header {
+  backgrond-color: #151414;
+}
+
+/**
+ * Forms
+ */
+
+.static-form h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;

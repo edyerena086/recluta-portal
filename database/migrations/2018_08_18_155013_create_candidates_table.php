@@ -16,10 +16,11 @@ class CreateCandidatesTable extends Migration
         Schema::create('candidates', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
+            $table->string('second_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('second_last_name')->nullable();
             $table->unsignedInteger('gender_id')->nullable();
-            $table->date('birthday')->nullable();
+            $table->integer('age')->nullable();
             $table->string('profile_picture')->nullable();
             $table->text('labor_goal')->nullable();
             $table->timestamps();

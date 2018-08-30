@@ -5,6 +5,16 @@
 // Variables
 @import "variables";
 
+/**
+ * Header
+ */
+.top-header {
+	backgrond-color: #151414;
+}
+
+/**
+ * Forms
+ */
 .static-form {
 	h3 {
 		font-family: $font-family-second;

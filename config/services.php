@@ -41,4 +41,8 @@ return [
         'redirect' => '',
     ],
 
+    'sparkpost' => [
+        'secret' => '2eed59555ce6ba183a9fabfbb36b6de043f070d1'
+    ],
+
 ];
